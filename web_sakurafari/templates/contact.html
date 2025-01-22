@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -5,27 +7,27 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <link rel="icon" href="img/fav-icon.png" type="image/x-icon" />
+        <link rel="stylesheet" href="{% static 'web_sakurafari/img/fav-icon.png' %}">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Sierra</title>
 
         <!-- Icon css link -->
-        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'web_sakurafari/css/font-awesome.min.css' %}">
         <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'web_sakurafari/css/bootstrap.min.css' %}">
         
         <!-- Rev slider css -->
-        <link href="vendors/revolution/css/settings.css" rel="stylesheet">
-        <link href="vendors/revolution/css/layers.css" rel="stylesheet">
-        <link href="vendors/revolution/css/navigation.css" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'web_sakurafari/vendors/revolution/css/settings.css' %}">
+        <link rel="stylesheet" href="{% static 'web_sakurafari/vendors/revolution/css/layers.css' %}">
+        <link rel="stylesheet" href="{% static 'web_sakurafari/vendors/revolution/css/navigation.css' %}">
         
         <!-- Extra plugin css -->
-        <link href="vendors/owl-carousel/owl.carousel.min.css" rel="stylesheet">
-        <link href="vendors/magnify-popup/magnific-popup.css" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'web_sakurafari/vendors/owl-carousel/owl.carousel.min.css' %}">
+        <link rel="stylesheet" href="{% static 'web_sakurafari/vendors/magnify-popup/magnific-popup.css' %}">
         
         
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/responsive.css" rel="stylesheet">
+        <link rel="stylesheet" href="{% static 'web_sakurafari/css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'web_sakurafari/css/responsive.css' %}">
 
         <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
         <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,7 +41,7 @@
         <!--================Header Menu Area =================-->
         <header class="main_menu_area">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
+                <a class="navbar-brand" href="#"><img src="{% static 'web_sakurafari/img/logo.png' %}"  alt=""></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span></span>
                     <span></span>
@@ -106,13 +108,13 @@
                     <div class="col-lg-6">
                         <div class="touch_details">
                             <div class="l_title">
-                                <img src="img/icon/title-icon.png" alt="">
-                                <h6>Say hello</h6>
-                                <h2>Get in touch, send us an e-mail or call us</h2>
+                                <img src="{% static 'web_sakurafari/img/icon/title-icon.png' %}"  alt="">
+                                <h6>GET IN TOUCH</h6>
+                                <h2>Have requests, questions or need more information?</h2>
                             </div>
-                            <p>Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum.</p>
-                            <a href="tel:+45237395593232"><h5>Call us now</h5></a>
-                            <a href="tel:+45237395593232"><h4>+452373 95593 232</h4></a>
+                            <p>Contact us via email or phone, and our team will be happy to assist you promptly</p>
+                            <h5>Contacts</h5>
+                            <p>Email Address: sakurafarisarl@gmail.com <br /> Whatsapp: +81 70 4175 2538</p>
                         </div>
                     </div>
                 </div>
@@ -135,9 +137,9 @@
                 <div class="container">
                     <div class="map_l_box_inner">
                         <div class="bd-callout">
-                            <h3>Gibraltar Office</h3>
-                            <p>Casemates Square, no253 <br /> United kingdom</p>
-                            <h4><a href="#">+453678 9283 559</a> <a href="#">contact@template.com</a></h4>
+                            <h3>Sakurafari Office</h3>
+                            <p>Yaoundé, Nishinomiya <br /> Cameroon, Japan</p>
+                            <h4><a href="#">+81 70 4175 2538</a> <a href="#">sakurafarisarl@gmail.com</a></h4>
                         </div>
                     </div>
                 </div>
@@ -152,7 +154,7 @@
                     <div class="row footer_widget_inner">
                         <div class="col-lg-4 col-sm-6">
                             <aside class="f_widget f_about_widget">
-                                <img src="img/footer-logo.png" alt="">
+                                <img src="{% static 'web_sakurafari/img/footer-logo.png' %}"  alt="">
                                 <p>Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum.</p>
                             </aside>
                         </div>
@@ -162,14 +164,14 @@
                                     <h3>Instagram</h3>
                                 </div>
                                 <ul>
-                                    <li><a href="#"><img src="img/instagram/ins-1.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="img/instagram/ins-2.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="img/instagram/ins-3.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="img/instagram/ins-4.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="img/instagram/ins-5.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="img/instagram/ins-6.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="img/instagram/ins-7.jpg" alt=""></a></li>
-                                    <li><a href="#"><img src="img/instagram/ins-8.jpg" alt=""></a></li>
+                                    <li><a href="#"><img src="{% static 'web_sakurafari/img/instagram/ins-1.jpg' %}"  alt=""></a></li>
+                                    <li><a href="#"><img src="{% static 'web_sakurafari/img/instagram/ins-2.jpg' %}"  alt=""></a></li>
+                                    <li><a href="#"><img src="{% static 'web_sakurafari/img/instagram/ins-3.jpg' %}"  alt=""></a></li>
+                                    <li><a href="#"><img src="{% static 'web_sakurafari/img/instagram/ins-4.jpg' %}"  alt=""></a></li>
+                                    <li><a href="#"><img src="{% static 'web_sakurafari/img/instagram/ins-5.jpg' %}"  alt=""></a></li>
+                                    <li><a href="#"><img src="{% static 'web_sakurafari/img/instagram/ins-6.jpg' %}"  alt=""></a></li>
+                                    <li><a href="#"><img src="{% static 'web_sakurafari/img/instagram/ins-7.jpg' %}"  alt=""></a></li>
+                                    <li><a href="#"><img src="{% static 'web_sakurafari/img/instagram/ins-8.jpg' %}"  alt=""></a></li>
                                 </ul>
                             </aside>
                         </div>
@@ -247,42 +249,42 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         
         
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="{% static 'web_sakurafari/js/jquery-3.2.1.min.js' %}"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/popper.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
+        <script src="{% static 'web_sakurafari/js/popper.min.js' %}"></script>
+        <script src="{% static 'web_sakurafari/js/bootstrap.min.js' %}"></script>
         <!-- Rev slider js -->
-        <script src="vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
-        <script src="vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
-        <script src="vendors/revolution/js/extensions/revolution.extension.actions.min.js"></script>
-        <script src="vendors/revolution/js/extensions/revolution.extension.video.min.js"></script>
-        <script src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script src="vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script src="vendors/revolution/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script src="vendors/revolution/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script src="{% static 'web_sakurafari/vendors/revolution/js/jquery.themepunch.tools.min.js' %}"></script>
+        <script src="{% static 'web_sakurafari/vendors/revolution/js/jquery.themepunch.revolution.min.js' %}"></script>
+        <script src="{% static 'web_sakurafari/vendors/revolution/js/extensions/revolution.extension.actions.min.js' %}"></script>
+        <script src="{% static 'web_sakurafari/vendors/revolution/js/extensions/revolution.extension.video.min.js' %}"></script>
+        <script src="{% static 'web_sakurafari/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
+        <script src="{% static 'web_sakurafari/vendors/revolution/js/extensions/revolution.extension.layeranimation.min.js' %}"></script>
+        <script src="{% static 'web_sakurafari/vendors/revolution/js/extensions/revolution.extension.navigation.min.js' %}"></script>
+        <script src="{% static 'web_sakurafari/vendors/revolution/js/extensions/revolution.extension.slideanims.min.js' %}"></script>
         <!-- Extra plugin css -->
-        <script src="vendors/counterup/jquery.waypoints.min.js"></script>
-        <script src="vendors/counterup/jquery.counterup.min.js"></script> 
-        <script src="vendors/counterup/apear.js"></script>
-        <script src="vendors/counterup/countto.js"></script>
-        <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
-        <script src="vendors/magnify-popup/jquery.magnific-popup.min.js"></script>
-        <script src="js/smoothscroll.js"></script>
-        <script src="vendors/circle-bar/circle-progress.min.js"></script>
-        <script src="vendors/circle-bar/plugins.js"></script>
-        <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
-        <script src="vendors/isotope/isotope.pkgd.min.js"></script>
+        <script src="{% static 'web_sakurafari/vendors/counterup/jquery.waypoints.min.js' %}"></script>
+        <script src="{% static 'web_sakurafari/vendors/counterup/jquery.counterup.min.js' %}"></script> 
+        <script src="{% static 'web_sakurafari/vendors/counterup/apear.js' %}"></script>
+        <script src="{% static 'web_sakurafari/vendors/counterup/countto.js' %}"></script>
+        <script src="{% static 'web_sakurafari/vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'web_sakurafari/vendors/magnify-popup/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{% static 'web_sakurafari/js/smoothscroll.js' %}"></script>
+        <script src="{% static 'web_sakurafari/vendors/circle-bar/circle-progress.min.js' %}"></script>
+        <script src="{% static 'web_sakurafari/vendors/circle-bar/plugins.js' %}"></script>
+        <script src="{% static 'web_sakurafari/vendors/isotope/imagesloaded.pkgd.min.js' %}"></script>
+        <script src="{% static 'web_sakurafari/vendors/isotope/isotope.pkgd.min.js' %}"></script>
         
         <!--gmaps Js-->
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
-        <script src="js/gmaps.min.js"></script>
+        <script src="{% static 'web_sakurafari/https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE' %}"></script>
+        <script src="{% static 'web_sakurafari/js/gmaps.min.js' %}"></script>
         
         <!-- contact js -->
-        <script src="js/jquery.form.js"></script>
-        <script src="js/jquery.validate.min.js"></script>
-        <script src="js/contact.js"></script>
+        <script src="{% static 'web_sakurafari/js/jquery.form.js' %}"></script>
+        <script src="{% static 'web_sakurafari/js/jquery.validate.min.js' %}"></script>
+        <script src="{% static 'web_sakurafari/js/contact.js' %}"></script>
         
-        <script src="js/circle-active.js"></script>
-        <script src="js/theme.js"></script>
+        <script src="{% static 'web_sakurafari/js/circle-active.js' %}"></script>
+        <script src="{% static 'web_sakurafari/js/theme.js' %}"></script>
     </body>
 </html>

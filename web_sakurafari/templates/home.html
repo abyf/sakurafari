@@ -9,7 +9,7 @@
         
         <link rel="stylesheet" href="{% static 'web_sakurafari/img/fav-icon.png' %}">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>Sierra</title>
+        <title>SAKURAFARI</title>
 
         <!-- Icon css link -->
         <link rel="stylesheet" href="{% static 'web_sakurafari/css/font-awesome.min.css' %}">
@@ -48,8 +48,8 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav">
-                        <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="about-us.html">About Us</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="{% url 'home' %}">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'about_us' %}">About Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="service.html">Services</a></li>
                         <li class="nav-item"><a class="nav-link" href="portfolio.html">Portfolio</a></li>
                         <li class="nav-item dropdown submenu">
@@ -62,7 +62,7 @@
                                 <li class="nav-item"><a class="nav-link" href="elements.html">Elements</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{% url 'contact' %}">Contact</a></li>
                     </ul>
                 </div>
             </nav>
@@ -90,7 +90,7 @@
                             data-type="text" 
                             data-responsive_offset="on" 
                             data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:0px;s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
-                            data-textAlign="['left','left','left','left','left','center']">Choose a powerful <br />design for your Start-up</div>
+                            data-textAlign="['left','left','left','left','left','center']">Bringing Cutting-Edge <br /> Japanese Technologies to Central Africa</div>
                             
                             <div class="tp-caption tp-resizeme secand_text" 
                                 data-x="['left','left','left','left','15','center']" 
@@ -106,7 +106,7 @@
                                 data-responsive_offset="on"
                                 data-transform_idle="o:1;"
                                 data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;&quot;,&quot;mask&quot;:&quot;x:0px;y:[100%];s:inherit;e:inherit;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:1500,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;y:[175%];&quot;,&quot;mask&quot;:&quot;x:inherit;y:inherit;s:inherit;e:inherit;&quot;,&quot;ease&quot;:&quot;Power2.easeInOut&quot;}]"
-                                data-textAlign="['left','left','left','left','left','center']">Get your freebie template now!
+                                data-textAlign="['left','left','left','left','left','center']">
                             </div>
                             
                             <div class="tp-caption tp-resizeme" 
@@ -466,12 +466,12 @@
                         <div class="touch_details">
                             <div class="l_title">
                                 <img src="{% static 'web_sakurafari/img/icon/title-icon.png' %}"  alt="">
-                                <h6>Say hello</h6>
-                                <h2>Get in touch, send us an e-mail or call us</h2>
+                                <h6>GET IN TOUCH</h6>
+                                <h2>Have requests, questions or need more information?</h2>
                             </div>
-                            <p>Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum.</p>
-                            <a href="#"><h5>Call us now</h5></a>
-                            <a href="#"><h4>+452373 95593 232</h4></a>
+                            <p>Contact us via email or phone, and our team will be happy to assist you promptly</p>
+                            <h5>Contacts</h5>
+                            <p>Email Address: sakurafarisarl@gmail.com <br /> Whatsapp: +81 70 4175 2538</p>
                         </div>
                     </div>
                 </div>
@@ -485,9 +485,9 @@
                 <div class="world_map_inner">
                     <img class="img-fluid" src="img/world-map.png" alt="">
                     <div class="bd-callout">
-                        <h3>Gibraltar Office</h3>
-                        <p>Casemates Square, no253 <br /> United kingdom</p>
-                        <h4><a href="#">+453678 9283 559</a> <a href="#">contact@template.com</a></h4>
+                        <h3>Sakurafari Office</h3>
+                        <p>Yaoundé, Nishinomiya <br /> Cameroon, Japan</p>
+                        <h4><a href="#">+81 70 4175 2538</a> <a href="#">sakurafarisarl@gmail.com</a></h4>
                     </div>
                 </div>
             </div>
@@ -501,7 +501,7 @@
                     <div class="row footer_widget_inner">
                         <div class="col-lg-4 col-sm-6">
                             <aside class="f_widget f_about_widget">
-                                <img src="{% static 'web_sakurafari/img/footer-logo.png' %}"  alt="">
+                                <img src="{% static 'web_sakurafari/img/logo.png' %}"  alt="">
                                 <p>Cras ex mauris, ornare eget pretium sit amet, dignissim et turpis. Nunc nec maximus dui, vel suscipit dolor. Donec elementum velit a orci facilisis rutrum.</p>
                             </aside>
                         </div>
