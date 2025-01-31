@@ -110,6 +110,14 @@ STATIC_URL = 'static/'
 STATICFILES_DIRS = [
         os.path.join(BASE_DIR,'static'),]
 
+# python3.9 -m smtpd -n -c DebuggingServer localhost:1025
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'sakurafarisarl@gmail.com'
+EMAIL_HOST_PASSWORD = 'dset owrw qnxp lhky'
+EMAIL_USE_TLS = True
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
